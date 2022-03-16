@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-roboto: "Roboto Slab", serif;
+  --font-raleway: "Raleway", sans-serif;
+}
+
+body {
+  font-family: var(--font-roboto);
+  background-color: #212426;
+  margin: 0;
+}
+
+.movie-detail {
+  width: 75%;
+  margin-top: 3em;
+  margin-inline: auto;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 2em;
+  color: white;
+}
+
+.movie-detail-main {
+  width: 70%;
+}
+
+.movie-detail-title {
+  font-weight: 500;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.currentMovie-poster {
+  display: block;
+}
+
+.movie-number-info {
+  display: flex;
+  gap: 2em;
+}
+
+.movie-non-number-info {
+  display: flex;
+  gap: 2em;
+}
+
+.fa-star {
+  color: orange;
+}
+
+.fa-thumbs-up,
+.fa-film {
+  color: white;
+}
+
+.fa-calendar {
+  color: bisque;
+}
+
+.color-dark-blue {
+  color: rgb(98, 153, 204);
+}
+
+@media (max-width: 900px) {
+  .movie-detail {
+    flex-direction: column;
+  }
+
+  .movie-detail-main {
+    width: 100%;
+  }
+}
